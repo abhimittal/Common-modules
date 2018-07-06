@@ -1,0 +1,82 @@
+# Question 1
+
+"""
+Python store time in form of tuple. This tuple consists of 9 numbers
+ Index       Field
+  0           year
+  1           month
+  2           day
+  3           hour
+  4           min
+  5           second
+  6           day of month
+  7           day of year
+  8           DST
+"""
+
+# Question 2
+import time
+t = time.gmtime()
+print(time.asctime(t))
+
+
+# Question 3
+
+import datetime
+from datetime import date
+d = date.today()
+print(d)
+print("Month of date is:")
+print(d.month)
+
+# Question 4
+
+import datetime 
+from datetime import date
+d = date.today()
+print("Day for date is:")
+print(d.day)
+
+# Question 5
+
+import datetime
+from datetime import date
+d = date.today()
+print(d)
+print("Day of date is:")
+print(d.day)
+
+# Question 6
+
+import time
+d = time.gmtime()
+print(d)
+print(d.tm_mday)
+
+# Questiom 7
+
+import time
+d = time.localtime()
+print(d)
+
+# Question 8
+
+import math
+x = int(input("Enter number whose factorial is required"))
+print(math.factorial(x))
+
+# Question 9
+
+import math
+a = int(input("Enter first number"))
+b = int(input("Enter second number"))
+print(math.gcd(a,b))
+
+# Question 10
+
+import os
+a = os.getcwd()
+print("Current working directory is:")
+print(a)
+print("Enviroment is:")
+print(os.environ.get('PATH'))
